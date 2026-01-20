@@ -73,7 +73,7 @@ class InformationDynamicsModel:
         return self.epsilon / (self.gamma + self.epsilon)
 ```
 
-## Parameter Space (v2 Corrected)
+## Parameter Space
 
 | Object | γ (10⁻⁵ s⁻¹) | ω (10⁻⁴ rad/s) | ε (10⁻⁴) | p |
 |--------|--------------|----------------|----------|----|
@@ -81,7 +81,6 @@ class InformationDynamicsModel:
 | 2I/Borisov | 21 ± 3 | 1.75 ± 0.15 | 0.21 ± 0.03 | 0.09 |
 | 3I/ATLAS | 3.8 ± 0.5 | 1.08 ± 0.02 | 0.078 ± 0.007 | 0.17 |
 
-*Parameters corrected in v2 to ensure p-value consistency*
 
 ## Three Testable Predictions for 3I/ATLAS
 
