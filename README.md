@@ -1,67 +1,92 @@
-**#Information Dynamics: A Unified Predictive Framework for Interstellar Objects**
+# Information Dynamics: A Unified Predictive Framework for Interstellar Objects
 
-https://img.shields.io/badge/License-MIT-yellow.svg
-https://img.shields.io/badge/python-3.10+-blue.svg
+## Core Scientific Questions & Computational Answers
 
-**This code repository is the companion to the paper:**
+This repository provides computational answers to the main puzzles outlined in the paper. Each core question is addressed by a specific script or module that demonstrates how the Information Dynamics framework explains ISO anomalies through numerical simulation and visualization.
 
-**Information Dynamics: A Unified Predictive Framework for Interstellar Objects — With Immediate Testable Predictions for 3I/ATLAS**
-Kai Huang*, Hongkui Liu†
-Submitted to arXiv on Jan 19, 2026
+### Core Scientific Questions
 
-Abstract: This work introduces the Information Dynamics framework, which unifies the anomalous behaviors of interstellar objects (ISOs) — 1I/‘Oumuamua, 2I/Borisov, and 3I/ATLAS — within a single, continuous spectrum defined by an information purity parameter, p. By adapting the Complex Ginzburg-Landau equation, the model explains key observational puzzles: strong non-gravitational acceleration without a coma (1I), standard cometary activity (2I), and, most critically, the coexistence of intense macroscopic jets with a lack of sub-micron dust scattering in 3I/ATLAS. We propose this “dust deficit” is not a compositional anomaly but a signature of a mixed dynamical state (p ≈ 0.17) where energy channels into macroscopic order. We conclude with three immediate, testable predictions for 3I/ATLAS before mid-2026. All code for reproducing the results and figures is provided here.
+| Question | What This Code Does | Key Script |
+|----------|-------------------|------------|
+| **Q1: The ISO Spectrum** – Can three seemingly different ISOs be described by one model? | Fits the p-spectrum, placing 1I, 2I, and 3I on a continuum from thermally-driven to information-driven states. | [`examples/fit_iso_spectrum.py`](examples/fit_iso_spectrum.py) |
+| **Q2: 3I's Missing Micro-Dust** – Why are there jets but no Rayleigh-scattering dust? | Simulates how energy allocation shifts from microscopic dust production to macroscopic structure as p increases. | [`examples/explain_dust_deficit.py`](examples/explain_dust_deficit.py) |
+| **Q3: 3I's Jet Symmetry** – Why 120° triple symmetry? | Demonstrates how the N=3 projection in the model spontaneously generates stable 120° symmetric patterns. | [`examples/simulate_3i_jets.py`](examples/simulate_3i_jets.py) |
+| **Q4: Testable Predictions** – What should we look for in 3I before mid-2026? | Generates synthetic observational signatures (anti-tail coherence, synchronized wobble) based on the model's parameters for 3I. | [`examples/generate_predictions.py`](examples/generate_predictions.py) |
 
-**Core Questions & Code-Based Explanations**
-This repository provides computational answers to the main puzzles outlined in the paper. Each core question is addressed by a specific script or module:
+## Quick Start
 
-Core Scientific Question	What This Code Does	Key File(s)
-Q1: The ISO Spectrum – Can three seemingly different ISOs be described by one model?	Fits the p-spectrum, placing 1I, 2I, and 3I on a continuum from thermally-driven to information-driven states.	examples/fit_iso_spectrum.py
-Q2: 3I’s Missing Micro-Dust – Why are there jets but no Rayleigh-scattering dust?	Simulates how energy allocation shifts from microscopic dust production to macroscopic structure as p increases.	examples/explain_dust_deficit.py
-Q3: 3I’s Jet Symmetry – Why 120° triple symmetry?	Demonstrates how the N=3 projection in the model spontaneously generates stable 120° symmetric patterns.	examples/simulate_3i_jets.py
-Q4: Testable Predictions – What should we look for in 3I before mid-2026?	Generates synthetic observational signatures (anti-tail coherence, synchronized wobble) based on the model’s parameters for 3I.	examples/generate_predictions.py
+### Installation
 
-**Getting Started in 5 Minutes**
-You do not need a complex development environment to run the core simulations.
-
-1. Quick Installation
-Ensure you have Python 3.10+. Then install the minimal dependencies:
-
-bash
-pip install numpy scipy matplotlib
-2. Run the Key Examples
-Clone the repo and run the central demonstration:
-
-bash
+```bash
+# Clone the repository
 git clone https://github.com/hkaiopen/InformationDynamics.git
 cd InformationDynamics
-python examples/fit_iso_spectrum.py  # Reproduces the core p-spectrum (Fig. 1)
-python examples/explain_dust_deficit.py # Visualizes the energy allocation argument
-These scripts will generate the figures that form the backbone of the paper’s argument.
 
-**Repository Structure**
+# Install dependencies
+pip install numpy pandas matplotlib scipy
+```
+
+### Run Core Examples
+
+```bash
+# Q1: Fit the ISO spectrum and generate Figure 1
+python examples/fit_iso_spectrum.py
+
+# Q2: Explain 3I's dust deficit through energy reallocation
+python examples/explain_dust_deficit.py
+
+# Q3: Simulate 3I's N=3 symmetric jet patterns
+python examples/simulate_3i_jets.py
+
+# Q4: Generate visualizations for the three testable predictions
+python examples/generate_predictions.py
+```
+
+## Code Structure
+
+```
 InformationDynamics/
-├── README.md                      # This file
-├── requirements.txt               # Minimal Python dependencies
-├── src/                           # Core model implementation
-│   ├── model.py                   # Solver for the CGLE (Eq. 1)
-│   └── projector.py               # Transforms internal state to observables (Eq. 2)
-└── examples/                      # Self-contained, runnable scripts
-    ├── fit_iso_spectrum.py        # **Core**: Fits data, calculates p, makes Fig. 1
-    ├── explain_dust_deficit.py    # **Core**: Shows energy reallocation logic
-    ├── simulate_3i_jets.py        # Generates N=3 symmetric jet patterns
-    └── generate_predictions.py    # Creates plots for the 3 testable predictions
-For a Wider Audience: Beyond Astrophysics
-The Information Dynamics framework is, at its heart, a tool for studying pattern formation in nonlinear, dissipative systems far from equilibrium. While applied here to interstellar objects, the core model.py implementing the Complex Ginzburg-Landau equation is agnostic to scale.
+├── information_dynamics_model.py      # Core CGLE implementation
+├── iso_parameter_fitting.py           # Parameter analysis & Table 1
+└── examples/                          # Self-contained scripts
+    ├── fit_iso_spectrum.py            # Q1: ISO spectrum fitting
+    ├── explain_dust_deficit.py        # Q2: Dust deficit explanation
+    ├── simulate_3i_jets.py            # Q3: Jet symmetry simulation
+    └── generate_predictions.py        # Q4: Testable predictions
+```
 
-Researchers in other fields (e.g., fluid dynamics, active matter, nonlinear optics) may find the provided code a useful starting point for simulating how simple rules (γ, ω, ϵ) can give rise to complex, ordered structures (N-fold symmetries). We welcome explorations and adaptations.
+## Core Model Implementation
 
-**Data & Reproducibility**
-1I & 2I Data: The scripts automatically fetch publicly available orbital and photometric data for 1I/‘Oumuamua and 2I/Borisov via astroquery from NASA JPL Horizons and other archives.
+The Information Dynamics model is based on a simplified Complex Ginzburg-Landau Equation (CGLE):
 
-3I/ATLAS Data: Parameters for 3I are based on fits to preliminary acceleration estimates and morphological reports from recent literature (e.g., Hubble analyses). As definitive astrometric and photometric data become public, the fitting scripts can be easily updated.
+```python
+# From information_dynamics_model.py
+class InformationDynamicsModel:
+    def __init__(self, gamma, omega, epsilon, F_thermal=0.0):
+        self.gamma = gamma      # Linear dissipation rate
+        self.omega = omega      # Characteristic frequency
+        self.epsilon = epsilon  # Nonlinear self-interaction
+        self.F_thermal = F_thermal  # Thermal forcing
+        
+    def information_purity(self):
+        """p = ε/(γ + ε) - quantifies dominance of self-organization"""
+        return self.epsilon / (self.gamma + self.epsilon)
+```
 
-**License & Citation**
-This software is licensed under the MIT License. If you use this code in your research, please cite our accompanying arXiv paper (details to be added upon acceptance).
+## Parameter Space (v2 Corrected)
 
-**Contact**
-For questions regarding the scientific framework, please refer to the paper. For technical issues with the code, please open an Issue on this GitHub repository.
+| Object | γ (10⁻⁵ s⁻¹) | ω (10⁻⁴ rad/s) | ε (10⁻⁴) | p |
+|--------|--------------|----------------|----------|----|
+| 1I/'Oumuamua | 0.12 ± 0.05 | 2.18 ± 0.10 | 0.059 ± 0.005 | 0.83 |
+| 2I/Borisov | 21 ± 3 | 1.75 ± 0.15 | 0.21 ± 0.03 | 0.09 |
+| 3I/ATLAS | 3.8 ± 0.5 | 1.08 ± 0.02 | 0.078 ± 0.007 | 0.17 |
+
+*Parameters corrected in v2 to ensure p-value consistency*
+
+## Three Testable Predictions for 3I/ATLAS
+
+1. **Anti-tail Coherence**: Narrow, coherent structure resistant to solar wind dispersion
+2. **Synchronized Wobble**: Jets wobble in phase with period ~6.73 days (2π/ω)
+3. **Discrete Activity Jumps**: Step-like changes uncorrelated with heliocentric distance
+
+**Verification of any two predictions before mid-2026 would support the model.**
