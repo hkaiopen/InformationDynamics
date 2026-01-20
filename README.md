@@ -6,12 +6,12 @@ This repository provides computational answers to the main puzzles outlined in t
 
 ### Core Scientific Questions
 
-| Question | What This Code Does | Key Script |
-|----------|-------------------|------------|
-| **Q1: The ISO Spectrum** – Can three seemingly different ISOs be described by one model? | Fits the p-spectrum, placing 1I, 2I, and 3I on a continuum from thermally-driven to information-driven states. | [`examples/fit_iso_spectrum.py`](examples/fit_iso_spectrum.py) |
-| **Q2: 3I's Missing Micro-Dust** – Why are there jets but no Rayleigh-scattering dust? | Simulates how energy allocation shifts from microscopic dust production to macroscopic structure as p increases. | [`examples/explain_dust_deficit.py`](examples/explain_dust_deficit.py) |
-| **Q3: 3I's Jet Symmetry** – Why 120° triple symmetry? | Demonstrates how the N=3 projection in the model spontaneously generates stable 120° symmetric patterns. | [`examples/simulate_3i_jets.py`](examples/simulate_3i_jets.py) |
-| **Q4: Testable Predictions** – What should we look for in 3I before mid-2026? | Generates synthetic observational signatures (anti-tail coherence, synchronized wobble) based on the model's parameters for 3I. | [`examples/generate_predictions.py`](examples/generate_predictions.py) |
+| Question | What This Code Does | Paper's Explanation (in a nutshell) |
+|----------|-------------------|--------------------------------------|
+| **Q1: The ISO Spectrum** – Can three seemingly different ISOs be described by one model? | Fits the p-spectrum, placing 1I, 2I, and 3I on a continuum from thermally-driven to information-driven states.  [`examples/fit_iso_spectrum.py`](examples/fit_iso_spectrum.py) | Yes, all three ISOs lie on a continuous spectrum defined by information purity p = ε/(γ+ε): 1I (p=0.83) is information-driven, 2I (p=0.09) is thermally-driven, and 3I (p=0.17) is in a mixed state. |
+| **Q2: 3I's Missing Micro-Dust** – Why are there jets but no Rayleigh-scattering dust? | Simulates how energy allocation shifts from microscopic dust production to macroscopic structure as p increases.  [`examples/explain_dust_deficit.py`](examples/explain_dust_deficit.py) | At p=0.17 (mixed state), energy is channeled into building macroscopic jet structures rather than fragmenting into sub-micron dust. The "dust deficit" is a predictable signature of this dynamical state. |
+| **Q3: 3I's Jet Symmetry** – Why 120° triple symmetry? | Demonstrates how the N=3 projection in the model spontaneously generates stable 120° symmetric patterns.  [`examples/simulate_3i_jets.py`](examples/simulate_3i_jets.py) | The N=3 symmetry parameter in the observable projection naturally creates stable 120° patterns when the nonlinear term (ε) is significant. This is an emergent property of the mixed dynamical state. |
+| **Q4: Testable Predictions** – What should we look for in 3I before mid-2026? | Generates synthetic observational signatures (anti-tail coherence, synchronized wobble) based on the model's parameters for 3I.  [`examples/generate_predictions.py`](examples/generate_predictions.py) | Three concrete predictions: 1) Coherent anti-tail, 2) Synchronized jet wobble with period ~6.7 days, 3) Discrete activity jumps. Verification of any two would strongly support the model. |
 
 ## Quick Start
 
@@ -52,7 +52,8 @@ InformationDynamics/
     ├── fit_iso_spectrum.py            # Q1: ISO spectrum fitting
     ├── explain_dust_deficit.py        # Q2: Dust deficit explanation
     ├── simulate_3i_jets.py            # Q3: Jet symmetry simulation
-    └── generate_predictions.py        # Q4: Testable predictions
+    ├── generate_predictions.py        # Q4: Testable predictions
+    └── predict_jan22_alignment.py     # P1: Predictions for Sun-Earth-3I alignment
 ```
 
 ## Core Model Implementation
@@ -80,7 +81,6 @@ class InformationDynamicsModel:
 | 1I/'Oumuamua | 0.12 ± 0.05 | 2.18 ± 0.10 | 0.059 ± 0.005 | 0.83 |
 | 2I/Borisov | 21 ± 3 | 1.75 ± 0.15 | 0.21 ± 0.03 | 0.09 |
 | 3I/ATLAS | 3.8 ± 0.5 | 1.08 ± 0.02 | 0.078 ± 0.007 | 0.17 |
-
 
 ## Three Testable Predictions for 3I/ATLAS
 
