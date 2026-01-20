@@ -1,5 +1,3 @@
-Here is the updated README.md in English, incorporating all your requested changes.
-
 # Information Dynamics: A Unified Predictive Framework for Interstellar Objects
 
 ## Core Scientific Questions & Computational Answers
