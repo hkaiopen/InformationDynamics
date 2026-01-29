@@ -1,0 +1,6 @@
+Parameter,1I_Oumuamua,2I_Borisov,3I_ATLAS,Units_Note
+gamma,1.2e-05,5.1e-05,3.8e-05,Linear dissipation rate (s^-1)
+omega,2.3e-04,8.7e-05,1.08e-04,Characteristic frequency (rad/s)
+epsilon,5.7e-05,5.1e-05,1.7e-04,Nonlinear self-interaction strength (s^-1)
+F_thermal,0.02,0.91,0.12,Thermal outgassing forcing (arb. units)
+p,0.83,0.09,0.17,Information purity (dimensionless)
