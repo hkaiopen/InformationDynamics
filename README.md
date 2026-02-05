@@ -12,6 +12,24 @@ The **Information Dynamics** framework explains the diverse behaviors of interst
 
 This scalar quantifies the dominance of self-organizing, information-driven processes (high `p`) over dissipative, thermally-driven processes (low `p`), placing all known ISOs on a continuous spectrum.
 
+## Why This Model Exists — Addressing "Too Simple to Believe"
+The core simplicity (one unifying parameter p describing three very different ISOs) may initially seem surprising or even implausible. This is by design:
+
+The model deliberately reduces complexity out of scientific responsibility — prioritizing empirical testability, restraint, and verifiable predictions over premature grand theorizing.
+It emerged from long cross-disciplinary reflection (analogizing cosmic systems to self-organizing wholes, heuristically inspired by holistic views in traditional Chinese medicine), yet remains strictly phenomenological and data-grounded.
+
+To build reader confidence in the model's consistency with published observations (despite its parsimony), we provide two independent computational verifications performed via ChatGPT as neutral, reproducible checks:
+
+GitHub/code-level verification
+(Focuses on parameter fitting consistency, retrodiction of observations, and reproducibility across scripts):
+https://chatgpt.com/s/t_698435aa8f98819183ae1b38c5af5ec3
+
+Paper/article-level validation
+(Detailed review of claims, prediction outcomes for 3I/ATLAS, alignment with Hubble/TESS/ground data, and overall coherence):
+https://chatgpt.com/s/dr_697da953823c8191a098f1f048df8093
+
+These checks confirm the model's retrodictive power on existing data and support its forward predictions (e.g., coherent anti-tail, synchronized jet wobble, discrete activity jumps). We encourage anyone to run the code themselves and compare.
+
 ## Core Scientific Questions & Computational Answers
 
 The code in this repository directly addresses the main puzzles outlined in the paper:
@@ -135,7 +153,7 @@ These updates refine geometric predictions but **do not alter the core fitted mo
 ## Citation
 
 If you use this code or the associated framework in your research, please cite the accompanying paper:
-> Huang, K., & Liu, H. (2026). Information Dynamics: A Unified Predictive Framework for Interstellar Objects — With Immediate Testable Predictions for 3I/ATLAS. *[JaPL]*.
+> Huang, K., & Liu, H. (2026). Information Dynamics: A Unified Predictive Framework for Interstellar Objects — With Immediate Testable Predictions for 3I/ATLAS.
 
 ## License
 
