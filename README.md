@@ -54,6 +54,13 @@ These checks confirm the model's retrodictive power on existing data and support
 | **examples/predict_jan22_alignment.py** | Predict signatures during Jan 22, 2026 alignment | Q5: Alignment Event      |
 | **examples/simulate_orbit.py**     | Compute & plot hyperbolic orbit (±2 yr arc), velocity, positions; compare to JPL data | Bridge model to observable trajectory (extends Q4) |
 
+## Prompt for quick Independent Validation with your AI assistant
+
+```bash
+Please verify the Information Dynamics framework from this GitHub repo: https://github.com/hkaiopen/InformationDynamics. 
+Explain the key parameter p, check whether the predictions for 3I/ATLAS (dust suppression, jet wobble, opposition surge) match real observations, and give your verdict.
+```
+
 ## Quick Start (5 Minutes)
 
 ```bash
