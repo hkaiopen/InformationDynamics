@@ -58,7 +58,26 @@ These checks confirm the model's retrodictive power on existing data and support
 
 ```bash
 Please verify the Information Dynamics framework from this GitHub repo: https://github.com/hkaiopen/InformationDynamics. 
-Explain the key parameter p, check whether the predictions for 3I/ATLAS (dust suppression, jet wobble, opposition surge) match real observations, and give your verdict.
+Explain the key parameter p, check whether the predictions for 3I/ATLAS (dust suppression, jet wobble, opposition surge)
+match real observations, and give your verdict.
+```
+
+Longer prompt:
+
+```bash
+Please help me verify the "Information Dynamics" framework presented in this paper (https://github.com/hkaiopen/InformationDynamics). Here’s what I’d like you to do:
+
+1. Read the paper's abstract and key sections (linked above) to understand the model: a single parameter p (information purity) unifies the behaviors of three interstellar objects – 1I/‘Oumuamua (p=0.83), 2I/Borisov (p=0.09), and 3I/ATLAS (p=0.17).
+
+2. Explain the core equation and the physical meaning of p in simple terms.
+
+3. Using the public data and Python scripts in the GitHub repository (e.g., explain_dust_deficit.py, simulate_3I_orbit.py), check whether the model’s predictions for 3I/ATLAS are consistent with actual observations (like SPHEREx dust non‑detection, jet wobble period ~16.2 hr, opposition surge 0.3–0.5 mag, etc.). You can either run the code mentally or describe how one would test it.
+
+4. Summarize your conclusion: does the framework hold up against the evidence? Are there any discrepancies?
+
+5. Finally, tell me if you need any additional information to perform this verification.
+
+Thank you!
 ```
 
 ## Quick Start (5 Minutes)
