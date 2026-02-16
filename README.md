@@ -83,3 +83,24 @@ Any two confirmed by ongoing Hubble/TESS/LSST data would strongly support the mo
 3. Then try fitting a new ISO when discovered.
 
 If you reproduce or refute any prediction, open an issue or PR — let's build this together.
+
+## Key External Resources & Live Updates on 3I/ATLAS
+
+Stay current with the latest observations, images, and mission data for 3I/ATLAS (C/2025 N1):
+
+- **[NASA Science – Comet 3I/ATLAS](https://science.nasa.gov/solar-system/comets/3i-atlas)**  
+  Official NASA hub: timelines, mission updates (Hubble, TESS, SPHEREx, etc.), image gallery, and trajectory tool.
+
+- **[ESA – Comet 3I/ATLAS FAQs](https://www.esa.int/Science_Exploration/Space_Science/Comet_3I_ATLAS_frequently_asked_questions)**  
+  ESA's dedicated page with FAQs, observation overviews, and links to Mars/JUICE data.
+
+- **[Wikipedia – 3I/ATLAS](https://en.wikipedia.org/wiki/3I/ATLAS)**  
+  Comprehensive encyclopedia entry with orbital elements, discovery history, and recent references.
+
+- **[3I/ATLAS Interstellar Object Tracker](https://3iatlas.com/)**  
+  Real-time position, magnitude, and analysis tracker with NASA/ESA links.
+
+- **[TheSkyLive – 3I/ATLAS Info](https://theskylive.com/c2025n1-info)**  
+  Live ephemeris, visibility charts, and observer data from COBS/JPL Horizons.
+
+These pages are updated frequently with new data (e.g., Feb 2026 SPHEREx water/organic detections). Check them alongside running the repo examples for full context.
