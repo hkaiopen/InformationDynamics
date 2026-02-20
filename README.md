@@ -130,3 +130,19 @@ Stay current with the latest observations, images, and mission data for 3I/ATLAS
   Live ephemeris, visibility charts, and observer data from COBS/JPL Horizons.
 
 These pages are updated frequently with new data (e.g., Feb 2026 SPHEREx water/organic detections). Check them alongside running the repo examples for full context.
+
+## Support This Independent Research
+ 
+If you find value in this unifying framework and would like to support further development (simulations, data analysis, outreach), any contribution — big or small — is deeply appreciated.  
+Inspired by Avi Loeb's approach: visionary science funded by those who believe in bold ideas.
+
+### Donation Options
+- **PayPal (easiest, global, credit card accepted)**  
+  [Donate via PayPal](https://paypal.me/kevinhuangkai)  
+  (Supports one-time or recurring)
+
+- **Bank transfer**
+  Please DM me on X (@KevinHuangkai) for bank details.
+  
+All funds go toward compute, data access, and expanding the Information Dynamics model.  
+Thank you for supporting open, frontier science!
