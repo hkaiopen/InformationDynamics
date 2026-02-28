@@ -137,12 +137,18 @@ If you find value in this unifying framework and would like to support further d
 Inspired by Avi Loeb's approach: visionary science funded by those who believe in bold ideas.
 
 ### Donation Options
-- **PayPal (easiest, global, credit card accepted)**  
+- **Buy Me A Coffee**  
+  [Donate via Buymeacoffee](https://buymeacoffee.com/hkaiopen)
+  
+- **Stripe**  
+  [Donate via Stripe](https://buy.stripe.com/eVqbJ12040RT1YLgg5gnK00)
+  
+- **PayPal**  
   [Donate via PayPal](https://paypal.me/kevinhuangkai)  
   (Supports one-time or recurring)
 
 - **Bank transfer**
   Please DM me on X (@KevinHuangkai) for bank details.
   
-All funds go toward compute, data access, and expanding the Information Dynamics model.  
+All funds go toward researching more mysteries in the universe, and expanding the Information Dynamics model.  
 Thank you for supporting open, frontier science!
