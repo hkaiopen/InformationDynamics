@@ -87,7 +87,7 @@ RADIUS_3I = 0.5  # km, approximate radius
 ID_PARAMS = {
     'gamma': 3.8e-5,       # s⁻¹ (dissipation rate)
     'omega': 1.08e-4,      # rad/s (characteristic frequency)
-    'epsilon': 1.7e-4,     # nonlinear self-interaction strength
+    'epsilon': 7.8e-6,     # nonlinear self-interaction strength
     'F_thermal': 0.12,     # thermal driving intensity
     'p': 0.17,             # information purity
     'N': 3                 # symmetry mode
