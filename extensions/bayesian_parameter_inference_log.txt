@@ -1,0 +1,56 @@
+======================================================================
+BAYESIAN MULTI-MESSENGER INFERENCE: 3I/ATLAS
+======================================================================
+
+======================================================================
+BAYESIAN INFERENCE RESULTS
+======================================================================
+
+gamma:
+  Mean:   4.24e-05
+  Median: 3.87e-05
+  Std:    1.81e-05
+  68% CI: [2.54e-05, 6.00e-05]
+  95% CI: [1.66e-05, 8.99e-05]
+
+omega:
+  Mean:   1.10e-04
+  Median: 1.09e-04
+  Std:    1.05e-05
+  68% CI: [9.92e-05, 1.20e-04]
+  95% CI: [9.21e-05, 1.33e-04]
+
+epsilon:
+  Mean:   7.46e-06
+  Median: 7.40e-06
+  Std:    1.94e-06
+  68% CI: [5.47e-06, 9.41e-06]
+  95% CI: [3.84e-06, 1.14e-05]
+
+p:
+  Mean:   1.62e-01
+  Median: 1.60e-01
+  Std:    4.80e-02
+  68% CI: [1.13e-01, 2.11e-01]
+  95% CI: [7.60e-02, 2.62e-01]
+
+F_thermal:
+  Mean:   1.20e-01
+  Median: 1.18e-01
+  Std:    4.87e-02
+  68% CI: [6.86e-02, 1.68e-01]
+  95% CI: [3.03e-02, 2.19e-01]
+
+Acceptance rate: 0.343
+Effective samples: 15000
+
+======================================================================
+VALIDATION CHECKS
+======================================================================
+
+p = 0.160 +0.050/-0.047
+Target p = 0.17 (from iso_parameter_fitting.py)
+✓ p = 0.17 is within 68% credible interval
+
+Note: For production, replace with emcee or numpyro for better sampling.
+[Finished in 1.2s]
