@@ -28,7 +28,7 @@ from typing import Tuple, Dict, Optional
 PARAMS_3I = {
     'gamma': 3.8e-5,       # s⁻¹ (dissipation rate)
     'omega': 1.08e-4,      # rad/s (characteristic frequency from paper)
-    'epsilon': 1.7e-4,     # nonlinear self-interaction strength
+    'epsilon': 7.8e-6,     # nonlinear self-interaction strength
     'F_thermal': 0.12,     # thermal driving intensity
     'N': 3,                # symmetry mode (triple jet)
     'p': 0.17              # information purity
