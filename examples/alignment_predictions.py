@@ -76,7 +76,7 @@ AU = 1.495978707e11  # meters (astronomical unit)
 ID_PARAMS = {
     'gamma': 3.8e-5,       # s⁻¹
     'omega': 1.08e-4,      # rad/s
-    'epsilon': 1.7e-4,     # nonlinear self-interaction
+    'epsilon': 7.8e-6,     # nonlinear self-interaction
     'F_thermal': 0.12,     # thermal driving
     'p': 0.17,             # information purity
     'N': 3                 # symmetry mode
