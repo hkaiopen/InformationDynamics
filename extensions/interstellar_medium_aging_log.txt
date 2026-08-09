@@ -1,0 +1,34 @@
+======================================================================
+INTERSTELLAR MEDIUM AGING: 3I/ATLAS
+======================================================================
+
+Nucleus: R = 1.3 km, rho = 500 kg/m³
+Wandering time: 10.0 Gyr
+
+Surface alteration depth: 1.000 m
+Relative to radius: 0.0769%
+
+Volume preserving primordial info: 99.77%
+
+Isotope modification (12C/13C):
+  Primordial (interior): 200
+  Altered surface:       89
+  Bulk average:          200
+  (Observed: ~147, between surface and interior)
+
+Layered structure (showing surface gradient):
+   Layer   Depth(m)   Alteration   Fidelity
+  ------------------------------------------
+       0     1235.1       0.0000     1.0000
+       1     1105.3       0.0000     1.0000
+       2      975.5       0.0000     1.0000
+       3      845.7       0.0000     1.0000
+       4      715.9       0.0000     1.0000
+       5      586.1       0.0000     1.0000
+       6      456.3       0.0000     1.0000
+       7      326.5       0.0000     1.0000
+  ...
+      17        0.5       0.2231     0.7769
+      18        0.3       0.4066     0.5934
+      19        0.1       0.7408     0.2592
+[Finished in 505ms]

@@ -1,0 +1,25 @@
+======================================================================
+ISOTOPE INFORMATION FIDELITY: 3I/ATLAS
+======================================================================
+
+3I/ATLAS Isotope Data:
+  D/H = 9.80e-03  →  f_lock = 6.482
+  12C/13C = 147  →  Y_C = 0.502
+  14N/15N = 363  →  Y_N = 0.289
+
+Chemical Exoticity:
+  E_chem = 4.91 (Solar System sigma units)
+  delta_f = 1.81, delta_y = 4.56
+
+Chemical Information Metrics:
+  F_chem (primordial memory) = 0.488
+  p_chem (scaled exoticity)  = 0.455
+  p_dyn (dynamical)          = 0.170
+  F_chem / p_dyn             = 2.87
+  Consistency (0.3<r<3)      = True
+
+Interpretation:
+  Chemical and dynamical states are moderately coupled.
+
+Plot saved to: isotope_fidelity.png
+[Finished in 11.2s]

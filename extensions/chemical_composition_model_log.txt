@@ -1,0 +1,40 @@
+======================================================================
+CHEMICAL COMPOSITION MODEL: 3I/ATLAS
+======================================================================
+
+Parameters: p = 0.17, T_form = 30.0 K
+Preservation factor alpha = 0.888
+
+--- CO2 enhancement = 1.0x ---
+  CO2_H2O: pred = 0.4607 (prim = 0.5000, SS = 0.1500)
+  CO_H2O: pred = 0.1178 (prim = 0.1200, SS = 0.1000)
+  CH4_H2O: pred = 0.0378 (prim = 0.0400, SS = 0.0200)
+  HDO_H2O: pred = 0.0071 (prim = 0.0080, SS = 0.0003)
+  Comparison:
+    CO2_H2O: obs = 0.8000, pred = 0.4607, sigma = 0.74
+    CO_H2O: obs = 0.1500, pred = 0.1178, sigma = 0.27
+    CH4_H2O: obs = 0.0500, pred = 0.0378, sigma = 0.32
+    HDO_H2O: obs = 0.0095, pred = 0.0071, sigma = 0.33
+
+--- CO2 enhancement = 1.5x ---
+  CO2_H2O: pred = 0.6910 (prim = 0.5000, SS = 0.1500)
+  CO_H2O: pred = 0.1178 (prim = 0.1200, SS = 0.1000)
+  CH4_H2O: pred = 0.0378 (prim = 0.0400, SS = 0.0200)
+  HDO_H2O: pred = 0.0071 (prim = 0.0080, SS = 0.0003)
+  Comparison:
+    CO2_H2O: obs = 0.8000, pred = 0.6910, sigma = 0.16
+    CO_H2O: obs = 0.1500, pred = 0.1178, sigma = 0.27
+    CH4_H2O: obs = 0.0500, pred = 0.0378, sigma = 0.32
+    HDO_H2O: obs = 0.0095, pred = 0.0071, sigma = 0.33
+
+--- CO2 enhancement = 2.0x ---
+  CO2_H2O: pred = 0.9214 (prim = 0.5000, SS = 0.1500)
+  CO_H2O: pred = 0.1178 (prim = 0.1200, SS = 0.1000)
+  CH4_H2O: pred = 0.0378 (prim = 0.0400, SS = 0.0200)
+  HDO_H2O: pred = 0.0071 (prim = 0.0080, SS = 0.0003)
+  Comparison:
+    CO2_H2O: obs = 0.8000, pred = 0.9214, sigma = -0.13
+    CO_H2O: obs = 0.1500, pred = 0.1178, sigma = 0.27
+    CH4_H2O: obs = 0.0500, pred = 0.0378, sigma = 0.32
+    HDO_H2O: obs = 0.0095, pred = 0.0071, sigma = 0.33
+[Finished in 6.1s]

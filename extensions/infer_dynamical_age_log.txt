@@ -1,0 +1,22 @@
+======================================================================
+DYNAMICAL AGE INFERENCE: 3I/ATLAS
+======================================================================
+
+12C/13C = 147:
+  Cosmic time t = 2.6 Gyr after Big Bang
+  → Formation age = 11.2 Gyr ago
+  → Redshift z ≈ 70.8
+
+D/H = 9.80e-03 (with cold fractionation at T=30.0 K):
+  Cosmic time t = 0.1 Gyr after Big Bang
+  → Formation age = 13.7 Gyr ago
+  → Redshift z ≈ 10.0
+
+Combined inference:
+  Chemical age: 12.0 Gyr
+  Wandering time: 0.1 Gyr
+  Parent system formation: 12.0 Gyr ago
+
+Comparison with Nature 2026 (10-12 Gyr):
+  Consistent: True
+[Finished in 2.0s]
