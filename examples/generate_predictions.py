@@ -35,13 +35,13 @@ PARAMS_3I = {
 }
 
 # Derived quantities
-OMEGA_PERIOD_DAYS = (2 * np.pi) / PARAMS_3I['ω'] / (24 * 3600)  # ~6.73 days
+OMEGA_PERIOD_DAYS = (2 * np.pi) / PARAMS_3I['ω'] / (24 * 3600)  # ~0.67 days = 16.2 hours (comment corrected Nov 2026; was 6.73 days)
 
 # Observational timeline
 TIMELINE = {
     'current': datetime(2026, 1, 20),
-    'perihelion': datetime(2025, 6, 15),
-    'unobservable': datetime(2026, 7, 1)
+    'perihelion': datetime(2025, 10, 29),  # corrected Nov 2026 (was 2025-06-15)
+    # Nov 2026: the object did NOT become unobservable in Jul 2026; still tracked Nov 2026 at about 12.7 AU, mag about 25.7.
 }
 
 # ============================================================================
@@ -53,8 +53,8 @@ def create_observation_timeline():
     fig, ax = plt.subplots(figsize=(12, 4))
     
     # Key dates
-    dates = [TIMELINE['perihelion'], TIMELINE['current'], TIMELINE['unobservable']]
-    events = ['Perihelion\n(Jun 2025)', 'Current\n(Jan 2026)', 'Unobservable\n(Jul 2026)']
+    dates = [TIMELINE['perihelion'], TIMELINE['current']]
+    events = ['Perihelion\n(Oct 2025)', 'Current\n(Jan 2026)']
     
     for date, event in zip(dates, events):
         ax.plot(date, 0, 'o', markersize=12, 
@@ -86,7 +86,7 @@ def create_observation_timeline():
     ax.set_ylim(-0.5, 0.5)
     ax.set_yticks([])
     ax.set_xlabel('Date', fontsize=12, fontweight='bold')
-    ax.set_title('Observation Timeline for 3I/ATLAS\nCritical: Unobservable by mid-2026', 
+    ax.set_title('Observation Timeline for 3I/ATLAS\nPerihelion 29 Oct 2025; still tracked Nov 2026',
                  fontsize=14, fontweight='bold', pad=20)
     
     ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %Y'))
@@ -97,8 +97,8 @@ def create_observation_timeline():
     
     # Urgency note
     urgency = (
-        "URGENT: 3I/ATLAS becomes unobservable by mid-2026\n"
-        "Observations must be completed before July 2026\n"
+        "3I/ATLAS perihelion was 29 Oct 2025 (not Jun 2025).\n"
+        "Still tracked in Nov 2026; see Zenodo v4 (Nov 2026) for verdicts.\n"
         "Verification of any 2 predictions supports the model"
     )
     ax.text(0.02, 0.95, urgency, transform=ax.transAxes, fontsize=10,
@@ -460,7 +460,7 @@ def create_verification_table():
         table[(0, i)].set_text_props(weight='bold', color='white')
     
     ax.set_title('Verification Criteria for Information Dynamics Framework\n' +
-                 '3I/ATLAS becomes unobservable by mid-2026', 
+                 '3I/ATLAS perihelion 29 Oct 2025; verdicts in Zenodo v4 (Nov 2026)',
                  fontsize=14, fontweight='bold', pad=20)
     
     plt.tight_layout()
@@ -540,9 +540,9 @@ def print_prediction_summary():
     print("\n" + "=" * 70)
     print("OBSERVATIONAL TIMELINE")
     print("=" * 70)
-    print("\nCritical: 3I/ATLAS becomes unobservable by mid-2026")
+    print("\nPerihelion: 29 Oct 2025 (corrected Nov 2026; was Jun 2025 in v1)")
     print(f"Current date: {TIMELINE['current'].strftime('%B %d, %Y')}")
-    print(f"Unobservable after: {TIMELINE['unobservable'].strftime('%B %Y')}")
+    print("Still tracked in Nov 2026 at about 12.7 AU, magnitude about 25.7")
     
     print("\nRecommended observational schedule:")
     print("  • Weekly monitoring: High-resolution imaging")
